@@ -29,7 +29,7 @@ DEFAULTINTERVAL=300
 #
 # Use the checkschedule.sh script to verify that the setting is correct and
 # which would be the active interval.
-SCHEDULE="00:00-08:00=240 08:00-24:00=120"
+SCHEDULE="00:00-24:00=120"
 
 # URL of screensaver image. This really must be in the EXACT resolution of
 # your Kindle's screen (e.g. 600x800 or 758x1024) and really must be PNG.
@@ -37,7 +37,7 @@ SCHEDULE="00:00-08:00=240 08:00-24:00=120"
 IMAGE_URI="https://raw.githubusercontent.com/krmbzds/kindle-weather/refs/heads/gh-pages/wallpaper.png"
 
 # folder that holds the screensavers
-SCREENSAVERFOLDER=/koreader/screensavers
+SCREENSAVERFOLDER=/mnt/us/koreader/screensavers
 
 # In which file to store the downloaded image. Make sure this is a valid
 # screensaver file. E.g. check the current screensaver folder to see what
