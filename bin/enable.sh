@@ -5,12 +5,12 @@ cd "$(dirname "$0")"
 
 # load configuration
 if [ -e "config.sh" ]; then
-	source /mnt/us/extensions/onlinescreensaver/bin/config.sh
+	source /mnt/us/extensions/wallpaperdownloader/bin/config.sh
 fi
 
 # load utils
 if [ -e "utils.sh" ]; then
-	source  /mnt/us/extensions/onlinescreensaver/bin/utils.sh
+	source  /mnt/us/extensions/wallpaperdownloader/bin/utils.sh
 else
 	echo "Could not find utils.sh in `pwd`"
 	exit
@@ -20,10 +20,10 @@ if [ -e /etc/upstart ]; then
 	logger "Enabling online screensaver auto-update"
 
 	mntroot rw
-	cp onlinescreensaver.conf /etc/upstart/
+	cp wallpaperdownloader.conf /etc/upstart/
 	mntroot ro
 
-	start onlinescreensaver
+	start wallpaperdownloader
 else
 	logger "Upstart folder not found, device too old"
 fi

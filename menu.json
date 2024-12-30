@@ -1,10 +1,10 @@
 {
 	"items": [
-		{"name": "Online-Screensaver",
+		{"name": "WallpaperDownloader",
 			"items" : [
 				{"name": "Update now",            "priority":0, "action": "bin/update.sh"},
-				{"name": "Enable auto-download",  "priority":0, "action": "bin/enable.sh",  "if": "\"/etc/upstart/onlinescreensaver.conf\" -f !" },
-				{"name": "Disable auto-download", "priority":0, "action": "bin/disable.sh", "if": "\"/etc/upstart/onlinescreensaver.conf\" -f" }
+				{"name": "Enable auto-download",  "priority":0, "action": "bin/enable.sh",  "if": "\"/etc/upstart/wallpaperdownloader.conf\" -f !" },
+				{"name": "Disable auto-download", "priority":0, "action": "bin/disable.sh", "if": "\"/etc/upstart/wallpaperdownloader.conf\" -f" }
 			]
 		}
 	]

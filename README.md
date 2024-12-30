@@ -53,7 +53,7 @@ How this script interacts with 3G models is also unknown.
 It is recommended to test the extension manually prior to activating auto
 updates. To do so, connect to your Kindle via SSH (ref. USBNet) and run
 
-	/mnt/us/extensions/onlinescreensaver/bin/scheduler.sh &
+	/mnt/us/extensions/wallpaperdownloader/bin/scheduler.sh &
 
 and then exit. If anything should go wrong, rebooting the Kindle should fix
 any problem.
@@ -85,7 +85,7 @@ when connected to your PC).
 Configuration
 -------------
 
-Edit onlinescreensaver/bin/config.sh, all available options are described
+Edit wallpaperdownloader/bin/config.sh, all available options are described
 here. Note that you MUST use an editor that supports Unix line endings. On
 Windows, use e.g. the free notepad++ application.
 

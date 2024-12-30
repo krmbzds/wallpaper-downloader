@@ -29,20 +29,20 @@ DEFAULTINTERVAL=300
 #
 # Use the checkschedule.sh script to verify that the setting is correct and
 # which would be the active interval.
-SCHEDULE="00:00-08:00=120 08:00-20:00=10 20:00-24:00=60"
+SCHEDULE="00:00-08:00=240 08:00-24:00=120"
 
 # URL of screensaver image. This really must be in the EXACT resolution of
 # your Kindle's screen (e.g. 600x800 or 758x1024) and really must be PNG.
 #IMAGE_URI="http://enter.the.domain/here/and/the/path/to/the/image.png"
-IMAGE_URI="http://192.168.178.49:5000/"
+IMAGE_URI="https://raw.githubusercontent.com/krmbzds/kindle-weather/refs/heads/gh-pages/wallpaper.png"
 
 # folder that holds the screensavers
-SCREENSAVERFOLDER=/mnt/us/linkss/screensavers/
+SCREENSAVERFOLDER=/koreader/screensavers
 
 # In which file to store the downloaded image. Make sure this is a valid
 # screensaver file. E.g. check the current screensaver folder to see what
 # the first filename is, then just use this. THIS FILE WILL BE OVERWRITTEN!
-SCREENSAVERFILE=$SCREENSAVERFOLDER/bg_ss00.png
+SCREENSAVERFILE=$SCREENSAVERFOLDER/wallpaper.png
 
 # Whether to create log output (1) or not (0).
 LOGGING=0
@@ -50,7 +50,7 @@ LOGGING=0
 # Where to log to - either /dev/stderr for console output, or an absolute
 # file path (beware that this may grow large over time!)
 LOGFILE=/dev/stderr
-#LOGFILE=/mnt/us/extensions/onlinescreensaver/log/onlinescreensaver.log
+#LOGFILE=/mnt/us/extensions/wallpaperdownloader/log/wallpaperdownloader.log
 
 # whether to disable WiFi after the script has finished (if WiFi was off
 # when the script started, it will always turn it off)
@@ -75,4 +75,4 @@ NETWORK_TIMEOUT=58
 RTC=0
 
 # the temporary file to download the screensaver image to
-TMPFILE=/tmp/tmp.onlinescreensaver.png
+TMPFILE=/tmp/tmp.wallpaperdownloader.png

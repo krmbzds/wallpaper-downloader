@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension>
 	<information>
-		<name>Online Screensaver</name>
-		<version>0.4</version>
-		<author>peterson</author>
-		<id>OnlineScreensaver</id>
+		<name>Wallpaper Downloader</name>
+		<version>0.5</version>
+		<author>krmbzds</author>
+		<id>WallpaperDownloader</id>
 	</information>
 	<menus>
 		<menu type="json" dynamic="true">menu.json</menu>

@@ -9,14 +9,14 @@ cd "$(dirname "$0")"
 
 # load configuration
 if [ -e "config.sh" ]; then
-	source /mnt/us/extensions/onlinescreensaver/bin/config.sh
+	source /mnt/us/extensions/wallpaperdownloader/bin/config.sh
 else
-	TMPFILE=/tmp/tmp.onlinescreensaver.png
+	TMPFILE=/tmp/tmp.wallpaperdownloader.png
 fi
 
 # load utils
 if [ -e "utils.sh" ]; then
-	source /mnt/us/extensions/onlinescreensaver/bin/utils.sh
+	source /mnt/us/extensions/wallpaperdownloader/bin/utils.sh
 else
 	echo "Could not find utils.sh in `pwd`"
 	exit
